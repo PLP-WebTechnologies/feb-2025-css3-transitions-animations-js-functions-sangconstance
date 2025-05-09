@@ -1,0 +1,125 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Theme styles */
+.light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.blue {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+/* Form styles */
+.preferences {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Animation area */
+.animation-area {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.animated-box {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Animation definitions */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Animation classes */
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+.pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Transition effects */
+.animated-box {
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.animated-box:hover {
+    transform: scale(1.05);
+    background-color: #45a049;
+}
